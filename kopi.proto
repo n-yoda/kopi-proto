@@ -1,0 +1,26 @@
+message Kopi {
+  // Type of drink.
+  enum Drink {
+    KOPI = 0;
+    TEH = 1;
+  }
+
+  // Required.
+  optional Drink drink = 1;
+
+  // Type of milk to add.
+  enum Milk {
+    DEFAULT_CONDENSED_MILK = 0;
+    O_NO_MILK = 1;
+    C_EVAPORATED_MILK = 2;
+  }
+
+  // Optional. They add condensed milk by default.
+  optional Milk milk = 2;
+
+  // Amount of sugar.
+  enum Sugar {
+    DEFAULT_BUT_TOO_SWEET = 0;
+  }
+  optional Sugar sugar = 3;
+}
